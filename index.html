@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPA Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            by Youssef
+        </header>
+        <div class="calculator">
+            <h2>GPA Calculator</h2>
+            <div id="course-list">
+              <div id="course-container">
+                <div class="course-row">
+                    <select class="grade">
+                        <option value="3.85">A+</option>
+                        <option value="3.55">A</option>
+                        <option value="3.25">A-</option>
+                        <option value="2.95">B+</option>
+                        <option value="2.95">B</option>
+                        <option value="2.65">B-</option>
+                        <option value="2.65">C+</option>
+                        <option value="2.35">C</option>
+                        <option value="2.05">C-</option>
+                        <option value="1.45">D</option>
+                        <option value="1.15">D-</option>
+                    </select>
+                    <input type="number" class="credits" placeholder="Credits" min="1">
+                </div>
+              </div>
+            </div>
+            <button class="btn-grad" onclick="addCourse()">+ Add Subject</button>
+            <button class="btn-grad" onclick="calculateGPA()">Calculate</button>
+            <p id="result">Your GPA: --</p>
+            <p id="icon"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+            
